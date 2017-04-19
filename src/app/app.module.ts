@@ -5,10 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { LobbyPage } from '../pages/lobby-page/lobby-page';
 import { MyApp } from './app.component';
+import { QuestionPage } from '../pages/question-page/question-page';
 
 let injections: any[] = [
   MyApp,
-  LobbyPage
+  LobbyPage,
+  QuestionPage
 ]
 
 @NgModule({

@@ -30,4 +30,8 @@ export class LobbyPage {
     this.navCtrl.push(HistoryPage);
   }
   
+  toLobby() {
+    this.navCtrl.push(LobbyPage);
+  }
+  
 }

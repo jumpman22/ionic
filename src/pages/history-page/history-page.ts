@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import { LobbyPage } from '../lobby-page/lobby-page';
+import { ResultsPage } from '../results-page/results-page';
 
 /**
  * Generated class for the HistoryPage page.
@@ -23,5 +23,11 @@ export class HistoryPage {
     this.tests = JSON.parse(window.localStorage.getItem("tests")) || [];
     console.log(this.tests);
   }
-
+  
+  goToResult(test) {
+    this.navCtrl.push(ResultsPage, {
+      test: test,
+      showHome: true
+      });
+  }
 }

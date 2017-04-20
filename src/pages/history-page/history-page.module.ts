@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicModule } from 'ionic-angular';
+import { IonicPageModule } from 'ionic-angular';
 import { HistoryPage } from './history-page';
 
 @NgModule({
@@ -7,7 +7,7 @@ import { HistoryPage } from './history-page';
     HistoryPage,
   ],
   imports: [
-    IonicModule.forChild(HistoryPage),
+    IonicPageModule.forChild(HistoryPage),
   ],
   exports: [
     HistoryPage

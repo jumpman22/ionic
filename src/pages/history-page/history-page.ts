@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+//import { LobbyPage } from '../lobby-page/lobby-page';
 
 /**
  * Generated class for the HistoryPage page.
@@ -13,12 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'history-page.html',
 })
 export class HistoryPage {
-
+  tests: any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HistoryPage');
+    this.tests = JSON.parse(window.localStorage.getItem("tests")) || [];
+    console.log(this.tests);
   }
 
 }

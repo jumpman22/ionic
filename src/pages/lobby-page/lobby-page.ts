@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QuestionPage } from '../question-page/question-page';
+import { HistoryPage } from '../history-page/history-page';
 /**
  * Generated class for the LobbyPage page.
  *
@@ -24,4 +25,9 @@ export class LobbyPage {
   takeTest() {
     this.navCtrl.push(QuestionPage);
   }
+  
+  showTest() {
+    this.navCtrl.push(HistoryPage);
+  }
+  
 }
